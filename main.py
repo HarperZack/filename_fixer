@@ -28,7 +28,7 @@ def rename_files(filename):
 if __name__ == '__main__':
     all_files = get_files_in_directory()
     for file in all_files:
-        if '_' in file:
+        if CHAR_TO_REPLACE in file:
             rename_files(file)
             print(file+' changed.')
     print('Finished.')
